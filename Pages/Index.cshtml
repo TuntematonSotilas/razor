@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+	<form method="post">
+		@Html.TextBoxFor(m => m.Asset.Name)
+		<input type="submit"/>
+	</form>
+	
+	<span>@Model.Asset.Name</span>
+
+</div>
